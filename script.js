@@ -1,4 +1,3 @@
-
 var guessedNum = parseInt(prompt('Guess a number between 1 to 10'))
 var randomNum = randomFn(0,10)
 var gameOver = false
@@ -40,3 +39,7 @@ return Math.floor(Math.random() * (max - min)) + min
    gameOver = false;
    askForANumber (guessedNum, randomNum)
  }
+
+var newGameButton = document.getElementById('newGameButton')
+
+newGameButton.addEventListener("click", newGame)
