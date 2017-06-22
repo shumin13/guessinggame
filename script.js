@@ -1,61 +1,44 @@
-// update the h1 to say higher or lower
-// or if the number guess is correct, we change the body color
-
-var randomNumber = randomFn(0, 10)
-var guessedNum = prompt('The first guess: type your number!')
-var isCorrect = false
+var guessedNum = parseInt(prompt('Guess a number between 1 to 10'))
+var randomNum = randomFn(0,10)
 var gameOver = false
 
-// fn that generates randomNum
-// min and max always whole number
-// random number between min and max (exclusive)
 function randomFn (min, max) {
-  return Math.floor(Math.random() * (max - min)) + min
-}
+return Math.floor(Math.random() * (max - min)) + min
+ }
 
-// this fn. updates h1 text content
-function updateH1(newH1) {
-  var h1 = document.querySelector('h1')
-  // var h1 = document.getElementsByTagName('h1')
+ //fn that checks numbers with the random number
+ function askForANumber (guessedNum, randomNum) {
+   if (guessedNum > randomNum) {
+     //DOM insert h1 change 'wrong, try again' etc
+   } else if (guessedNum < randomNum) {
+      //DOM insert h1 change 'wrong, try again' etc
+   } else if(guessedNum === randomNum) {
+      //DOM insert h1 change 'correct' etc
+     gameOver = true
+   }
+   checkForGameover()
+ }
 
-  // updated the property of h1 dom node
-  h1.textContent = newH1
-}
+ function checkForGameover() {
+   if(gameOver) {
+     //DOM reveal restart button, function newGame()
+   } else {
+     guessedNum = parseInt(prompt('Type your number again!'))
+     askForANumber(guessedNum, randomNum)
+   }
+ }
 
-// fn that checks numbers with the random number
-function askForANumber (guessedNum, randomNumber) {
-  if (guessedNum > randomNumber) {
-    updateH1('lower, randomNumber is ' + randomNumber)
-  } else if (guessedNum < randomNumber) {
-    updateH1('higher, randomNumber is ' + randomNumber)
-  } else if(guessedNum === randomNumber) {
-    updateH1('correct')
-    gameOver = true
-  }
-  checkForGameover()
-}
+ //execute function
+  askForANumber (guessedNum, randomNum)
+  console.log(randomNum)
 
-askForANumber (guessedNum, randomNumber)
-
-function newGame() {
-  // setting randomNumber to 5 for easy checking
-  askForANumber( guessedNum, 5 )
-}
-
-function checkForGameover() {
-  if(gameOver) {
-    alert('reveal the restart button now, stop the game')
-  } else {
-    guessedNum = prompt('Type your number again!')
-    // bugs?!
-    askForANumber(guessedNum, randomNumber)
-  }
-}
-
-// bugs?!
-// if(! gameOver) {
-//
-// }
+//DOM execute on clicking restart button
+ function newGame(){
+   guessedNum = parseInt(prompt('Guess a number between 1 to 10'))
+   randomNum = randomFn(0,10)
+   gameOver = false;
+   askForANumber (guessedNum, randomNum)
+ }
 
 var newGameButton = document.getElementById('newGameButton')
 
