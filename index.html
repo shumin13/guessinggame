@@ -8,18 +8,17 @@
   </head>
 
   <body>
-    <div class="wrapper">
       <h1>Welcome to the <br> Number Guessing Game</h1>
-      <p>Guess a number between 0 and 100. </p>
+      <p>Guess a number between 0 and 10. </p>
       <p>If you are wrong, we will tell you if your guess is supposed to be higher or lower.</p>
       <p>If you are correct, <span>Prima</span> will give you a hug!</p>
+      <p class="guesses"></p>
 
-      <form class="guess">
-      <input type="text" placeholder="Enter Your Guess Here">
-      <button type="button" id="Enter">Enter</button>
-      <button type="button" id="newGameButton">New Game</button>
-    </div>
+      <input type="text" class="guessInput" placeholder="Enter Your Guess Here">
+      <input type="submit" class="guessSubmit" value="Submit">
+
     <script src="script.js" charset="utf-8"></script>
+
   </body>
 
 </html>

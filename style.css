@@ -1,6 +1,5 @@
 body {
   background: url("http://www.wallpaperup.com/uploads/wallpapers/2014/01/03/214148/e035318bd6e0c1ddd5aa56af70452274.jpg") no-repeat center;
-  /*background: url("http://wallsdesk.com/wp-content/uploads/2016/09/Space-HD.jpg");*/
   background-size: auto;
   margin: 0 auto;
   text-align: center;
@@ -12,7 +11,7 @@ body {
 h1 {
   font-family: 'Permanent Marker', cursive;
   font-size: 60px;
-  margin-top: 80px;
+  margin-top: 100px;
   margin-bottom: 10px;
 }
 
@@ -23,64 +22,57 @@ p {
   margin: 0;
 }
 
+.guesses {
+  font-size: 40px;
+  color: yellow;
+}
+
 span {
   color: pink;
   font-size: 30px;
 }
 
-input {
+input[type='text'] {
   font-family: 'Indie Flower', cursive;
   font-size: 25px;
   font-weight: bold;
   margin-top: 20px;
+  margin-right: 10px;
   border-radius: 10px;
   padding: 10px;
   text-align: center;
-  width: inherit;
+  width: 300px;
 }
 
-/*button {
-      padding: 8px 8px;
-      font-size: 15px;
-      text-align: center;
-      text-decoration: none;
-      outline: none;
-      color: #fff;
-      background-color: #000;
-      border: none;
-      border-radius: 9px;
-      box-shadow: 0 5px #999;
-    }
-    button:hover {
-      background-color: #f23
-    }
-    button:active {
-      background-color: #f23;
-      box-shadow: 0 5px #666;
-      transform: translateY(3px);
+input[type='submit'], button {
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 10px;
+  margin-right: 15px;
+  text-align: center;
+  color: black;
+  border-radius: 10px;
+  background: pink;
 }
 
-small {
-  opacity: 0;
-  font-size: 16px;
+button {
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 10px;
+  margin-left: 350px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  background: indigo;
+  display: block;
 }
 
-.show-description p {
-  height: 110px;
+input[type='submit']:hover {
+  background-color: #fff;
 }
 
-.show-description small {
-  opacity: 1;
-
-transition: height .5s;
--webkit-transition: height .5s;
--moz-transition: height .5s;*/
-
-/*var newGameButton = document.getElementById('newGameButton')
-
-newGameButton.addEventListener('click', newGame)
-
-
-$('div').on('click', function() {
-    $(this).toggleClass('show-description');
-});*/
+button:hover {
+      background-color: white;
+      color: black;
