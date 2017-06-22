@@ -1,0 +1,86 @@
+body {
+  background: url("http://www.wallpaperup.com/uploads/wallpapers/2014/01/03/214148/e035318bd6e0c1ddd5aa56af70452274.jpg") no-repeat center;
+  /*background: url("http://wallsdesk.com/wp-content/uploads/2016/09/Space-HD.jpg");*/
+  background-size: auto;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 900px;
+  color: white;
+  text-shadow: 5px 4px 2px black;
+}
+
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 60px;
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-family: 'Indie Flower', cursive;
+  font-size: 26px;
+  font-weight: bold;
+  margin: 0;
+}
+
+span {
+  color: pink;
+  font-size: 30px;
+}
+
+input {
+  font-family: 'Indie Flower', cursive;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  width: inherit;
+}
+
+/*button {
+      padding: 8px 8px;
+      font-size: 15px;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #000;
+      border: none;
+      border-radius: 9px;
+      box-shadow: 0 5px #999;
+    }
+    button:hover {
+      background-color: #f23
+    }
+    button:active {
+      background-color: #f23;
+      box-shadow: 0 5px #666;
+      transform: translateY(3px);
+}
+
+small {
+  opacity: 0;
+  font-size: 16px;
+}
+
+.show-description p {
+  height: 110px;
+}
+
+.show-description small {
+  opacity: 1;
+
+transition: height .5s;
+-webkit-transition: height .5s;
+-moz-transition: height .5s;*/
+
+/*var newGameButton = document.getElementById('newGameButton')
+
+newGameButton.addEventListener('click', newGame)
+
+
+$('div').on('click', function() {
+    $(this).toggleClass('show-description');
+});*/
