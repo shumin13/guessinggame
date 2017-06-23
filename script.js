@@ -28,7 +28,7 @@ function askForANumber () {
 function checkForGameover () {
   if (gameOver) {
     // DOM reveal restart button, function newGame()
-    resetButton = document.createElement('button')
+    var resetButton = document.createElement('button')
     resetButton.textContent = 'Start New Game'
     document.body.appendChild(resetButton)
     resetButton.addEventListener('click', newGame)
@@ -39,7 +39,7 @@ function checkForGameover () {
 
 // DOM execute on clicking restart button
 function newGame () {
-  resetButton.parentNode.removeChild(resetButton);
+  resetButton.parentNode.removeChild(resetButton)
   randomNum = randomFn(0, 10)
   gameOver = false
   document.body.style.background = "url('http://www.wallpaperup.com/uploads/wallpapers/2014/01/03/214148/e035318bd6e0c1ddd5aa56af70452274.jpg') no-repeat center"
